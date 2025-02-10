@@ -4,80 +4,193 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML tags</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        h2{
-            background: rgb(158, 23, 23);
-        }
-        .bg-blue{
-            background: rgb(45, 19, 146);
-            color: white;
-        }
-        table{
-            width: 50%;
-            border: 1px solid #fff;
-            
-        }
-        td,th{
-            border: 1px solid white;
-        }
-    </style>
-    
+    <title>Starbucks Coffee Company</title>
 </head>
 <body>
-    <h1 style="background-color:#777575;">Heading 1</h1>
-    <h2>Heading 2</h2>
-    <h6 title ="title two" class="bg-blue">Heading 6</h6>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <a href="index.html">
+                    <img src="logo.png" alt="Starbucks">
+                </a>
+            </div>
 
-    <p title="title one">Lorem <br>
-        ipsum dolor, sit amet consectetur adipisicing elit. Veniam temporibus, praesentium odit asperiores ipsum dignissimos pariatur deserunt, illo, dolorem placeat id nostrum vel nam. Facilis consequuntur, blanditiis hic corrupti ab ipsam similique necessitatibus dolorem ducimus quod, quos, ea nobis. Animi voluptatem minus corporis saepe nam necessitatibus, repellat at commodi asperiores nemo magnam nihil praesentium illo iste? Repellat incidunt commodi dolorem inventore nulla suscipit, quos eligendi deserunt nihil, quod esse ipsam, pariatur aliquam cupiditate nemo. Dolorem possimus iure adipisci doloremque officiis esse, deserunt illum harum voluptatem fuga aliquam ducimus itaque atque? Ipsa ratione in odit libero natus sit et. Est autem, eos voluptates architecto totam id mollitia quod tempora optio pariatur nihil temporibus quidem praesentium qui aliquam voluptatibus, ipsa, culpa nam impedit soluta? Libero aspernatur recusandae fugit accusantium autem eius, in iusto, iure saepe distinctio unde at doloribus voluptatibus amet animi tempore dolorem aliquid? Dignissimos voluptatem sint numquam, labore veritatis vel doloremque mollitia neque facilis laudantium, iste, alias eaque non cupiditate! Veniam, quas? Incidunt amet iusto non fuga repellendus, saepe fugiat maxime excepturi dolor consequuntur iure! Eum, voluptate officia aspernatur nihil fuga excepturi hic, dolores, neque autem optio ipsa illo expedita minima architecto officiis? Magni commodi omnis, molestias voluptate recusandae aliquam.</p>
-        <a target="_self" href="https://google.com">Google</a>
-        <img src="logo.png" width="200px"  alt="skills">
-        <table>
-            <tr class="row">
-                <td class="col">some sheet</td>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Password</th>
-            </tr>
-            <tr>
-                <td>Dhruvi</td>
-                <td>dhruviadasariya@gmail.com</td>
-                <td>123</td>
-            </tr>
-            <tr>
-                <td>Dhruvi</td>
-                <td>dhruviadasariya@gmail.com</td>
-                <td>123</td>
-            </tr>
-            <tr>
-                <td>Dhruvi</td>
-                <td>dhruviadasariya@gmail.com</td>
-                <td>123</td>
-            </tr>
-        </table>
+            <ul class="navbar-nav-left">
+                <li>
+                    <a href="#">Menu</a>
+                </li>
+                <li>
+                    <a href="#">Rewards</a>
+                </li>
+                <li>
+                    <a href="#">Gift Cards</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav-right">
+                <li>
+                 <a href="#">
+                    <img src="marker.png" alt="">
+                    <span>Find a Store</span>
+                </a>
+            </li>
+            <li><button class="btn btn-dark-outline">Sign in</button></li>
+            <li><button class="btn btn-dark">Join now</button></li>
+            </ul>
+            <!--Hamburger menu-->
+            <button type="button" class="hamburger" id="menu-btn">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
 
-        <form action="https://backend.com/api/" method="get" >
-            <label for="Email">Email: </label>
-            <input type="text" name="Email" id="Email">
-            <label for="pass">Password: </label>
-            <input type="text" name="Password" id="email" placeholder="Password">
-            <button type="submit">Login</button>
-        
+        </div>
+    </nav>
 
-        <input type="text" name="Newslatter" id="Pass" placeholder="Email">
-        <button type="submit">Login</button>
-    </form>
-    <div class="footer"></div>
-    <div class="header"></div>
+    <!--Mobile menu-->
+    <div class="mobile-menu hidden" id="menu">
+        <ul>
+            <li>
+                <a href="#">Menu</a>
+            </li>
+            <li>
+                <a href="#">Rewards</a>
+            </li>
+            <li>
+                <a href="#">Gift Cards</a>
+            </li>
 
-    <header></header>
-    <footer></footer>
+        </ul>
+        <div class="mobile-menu-bottom">
+            <button class="btn btn-dark-outline">Sign in</button>
+            <button class="btn btn-dark">Join now</button>
+            <div>
+                <a href="">
+                    <img src="marker.png" alt="">
+                    <span>Find a store</span>
+    
+                </a>
+            </div>
+           
+        </div>
+    </div>
 
+    <!--BOX A-->
+    <section class="box box-a bg-primary text-center py-md">
+        <div class="box-inner">
+            <h2 class="text-xl">Jingle all the way to free favourites</h2>
+            <p class="text-md">
+                join starbucks Rewards for delicious deals & exclusive offers.
+                <a href="#">Learn more</a>
+            </p>
+        </div>
+    </section>
+    <!--Box B-->
+    <section class="box box-b bg-secondary grid-col-2">
+        <img src="box-b.png" alt="">
+        <div class="box-text">
+            <h2 class="text-xl">New to the nice list</h2>
+            <p class="text-md"> For a nondairy twist on a holiday cookie classic,try the new iced
+                Sugar Cookie Almondmilk latte. </p>
+            <a href="#" class="btn btn-light-outline">Order now</a>
+        </div>
+    </section>
+
+      <!--Box c-->
+      <section class="box box-c bg-secondary grid-col-2 grid-reversed">
+        <img src="box-c.png" alt="">
+        <div class="box-text">
+            <h2 class="text-xl">Merry moment</h2>
+            <p class="text-md"> Treat yourself to a festive sugar plum cheese Danish with a nicely 
+                spiced sugar-plum spread.</p>
+            <a href="#" class="btn btn-light-outline">Order now</a>
+        </div>
+    </section>
+
+      <!--Box D-->
+      <section class="box box-d bg-primary grid-col-2 " >
+        <img src="box-d.png" alt="">
+        <div class="box-text">
+            <h2 class="text-xl">Starbucks Thanksgiving Blend</h2>
+            <p class="text-md"> This elegant dark roast returns,showcasing flavors from some of 
+                world's major coffee-growing regions.</p>
+            <a href="#" class="btn btn-light-outline">Order now</a>
+        </div>
+    </section>
+
+      <!--Box E-->
+      <section class="box box-e bg-secondary grid-col-2 grid-reversed">
+        <img src="e.png" alt="">
+        <div class="box-text">
+            <h2 class="text-md">Fighting Hunger this Holiday</h2>
+            <p class="text-sm">Hunger is affecting millions of people across America this holiday season.
+                Join us in our commitment to hunger relief and help feed neighbors in need. </p>
+            <a href="#" class="btn btn-light-outline">Order now</a>
+        </div>
+    </section>
+
+    <!--Box F-->
+<section class="box box-f grid-col-2">
+   <div>
+    <img src="f1.png" alt="">
+    <div class="bg-extra py-lg">
+        <div class="box-text">
+            <h2 class="text-md">Lets the holiday cheer come to you</h2>
+            <p class="text-sm"> Make the moment merry.Order starbucks holiday favourites on uber Eats.*</p>
+            <a href="#" class="btn btn-dark-outline">Order now</a>
+        </div>
+    </div>
+     
+
+   </div>
+   <div>
+    <img src="f2.png" alt="">
+    <div class="bg-primary py-lg">
+        <div class="box-text">
+            <h2 class="text-md">Loved passing on Netflix?</h2>
+            <p class="text-sm">Our new social series about film adaptations kicks off with the actors directors who brought the book to life. </p>
+            <a href="#" class="btn btn-light-outline">Order now</a>
+        </div>
+    </div>
+       
+   </div>
+</section>
+
+<div class="divider"></div>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="social">
+            <a href="https://spotify.com">
+                <img src="spotify.png" alt="" />
+            </a>
+            <a href="https://facebook.com">
+                <img src="facebook.png" alt="" />
+            </a>
+            <a href="https://pintrest.com">
+                <img src="pintrest.png" alt="" />
+            </a>
+            <a href="https://instragram.com">
+                <img src="instragram.png" alt="" />
+            </a>
+            <a href="https://youtube.com">
+                <img src="youtube.png" alt="" />
+            </a>
+            <a href="https://twitter.com">
+                <img src="twitter.png" alt="" />
+            </a>
+
+
+
+
+
+
+        </div>
+        <p>2021 starbuckscoffee company. All rights reserved.</p>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+    
 </body>
 </html>
